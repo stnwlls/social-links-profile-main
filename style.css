@@ -1,0 +1,93 @@
+:root {
+  /* colors */
+  --grey-900: #141414;
+  --grey-800: #1F1F1F;
+  --grey-700: #333333;
+  --green: #C4F82A;
+  --white: #FFFFFF;
+  
+  /* fonts */
+  --font-name: "Inter", sans-serif;
+  
+  --font-lg: 24px;
+  --font-rg: 14px;
+  
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+  
+  --line-height: 150%;
+  
+  --letter-spacing: 0px;
+  
+  /* spacing */
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+  
+  /* border radius */
+  --card-radius: 12px;
+  --image-radius: 50%;
+  --button-radius: 8px;
+}
+
+.text-preset-1 {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-lg);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-preset-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-rg);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-preset-2-bold {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-rg);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+html {
+  font-family: var(--font-name);
+  background-color: var(--grey-900);
+}
+
+.card-container {
+  background-color: var(--grey-800);
+}
+
+.image-avatar {
+  border-radius: var(--image-radius);
+}
+
+.text-name {
+  color: var(--white);
+}
+
+.text-location {
+  color: var(--green);
+}
+
+.text-tagline {
+  color: var(--white);
+}
+
+.button {
+  background-color: var(--grey-700);
+  color: var(--white);
+  transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
+}
+
+.button:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
